@@ -13,7 +13,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "@fortawesome/fontawesome-free/css/all.css";
+// import "@f";
 
 
 ReactDOM.render(

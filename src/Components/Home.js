@@ -1,4 +1,4 @@
-import Router from 'react';
+import React from 'react';
 
 function Home() {
     return (
