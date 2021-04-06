@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux';
+
+import { BrowserRouter } from 'react-router-dom';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "@fortawesome/fontawesome-free/css/all.css";
+
+
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
